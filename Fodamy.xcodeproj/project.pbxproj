@@ -1,0 +1,1053 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DDB61BA5875507279D6AF44 /* Pods_FodamyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2793196E446CEE71B65F50 /* Pods_FodamyTests.framework */; };
+		39C56157E747621B42046C65 /* Pods_Fodamy_FodamyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAC64BBFFF64EDD22FD16EA /* Pods_Fodamy_FodamyUITests.framework */; };
+		9805BFCC2B1A15F6009462B5 /* DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9805BFCB2B1A15F6009462B5 /* DataProvider.framework */; };
+		9805BFCD2B1A15F6009462B5 /* DataProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9805BFCB2B1A15F6009462B5 /* DataProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9805BFD02B1A15FA009462B5 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9805BFCF2B1A15FA009462B5 /* UIComponents.framework */; };
+		9805BFD12B1A15FA009462B5 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9805BFCF2B1A15FA009462B5 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9805BFD32B1A15FE009462B5 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9805BFD22B1A15FE009462B5 /* Utilities.framework */; };
+		9805BFD42B1A15FE009462B5 /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9805BFD22B1A15FE009462B5 /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		98271F732B19206500097889 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98271F722B19206500097889 /* AppDelegate.swift */; };
+		98271F7C2B19206600097889 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98271F7B2B19206600097889 /* Assets.xcassets */; };
+		98271F7F2B19206600097889 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98271F7D2B19206600097889 /* LaunchScreen.storyboard */; };
+		98271F8A2B19206600097889 /* FodamyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98271F892B19206600097889 /* FodamyTests.swift */; };
+		98271F942B19206600097889 /* FodamyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98271F932B19206600097889 /* FodamyUITests.swift */; };
+		98271F962B19206600097889 /* FodamyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98271F952B19206600097889 /* FodamyUITestsLaunchTests.swift */; };
+		982720392B192C3600097889 /* DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982720382B192C3600097889 /* DataProvider.framework */; };
+		9827203A2B192C3600097889 /* DataProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 982720382B192C3600097889 /* DataProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9827203D2B192C3900097889 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9827203C2B192C3900097889 /* UIComponents.framework */; };
+		9827203E2B192C3900097889 /* UIComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9827203C2B192C3900097889 /* UIComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		982720402B192C3C00097889 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9827203F2B192C3C00097889 /* Utilities.framework */; };
+		982720412B192C3C00097889 /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9827203F2B192C3C00097889 /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9878941A2B1F52D800608E8C /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894192B1F52D800608E8C /* Animator.swift */; };
+		9878941C2B1F537F00608E8C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878941B2B1F537F00608E8C /* Router.swift */; };
+		9878941F2B1F540600608E8C /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878941E2B1F540600608E8C /* Transition.swift */; };
+		987894262B1F572600608E8C /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894232B1F572600608E8C /* BaseRouter.swift */; };
+		987894272B1F572600608E8C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894242B1F572600608E8C /* BaseViewController.swift */; };
+		987894282B1F572600608E8C /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894252B1F572600608E8C /* BaseViewModel.swift */; };
+		9878942C2B1F59B100608E8C /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878942B2B1F59B100608E8C /* DataProvider.swift */; };
+		987894322B1F5E7F00608E8C /* APILogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894312B1F5E7F00608E8C /* APILogger.swift */; };
+		987894342B1F5EA700608E8C /* APIRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894332B1F5EA700608E8C /* APIRequestInterceptor.swift */; };
+		987894432B1F650200608E8C /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894422B1F650200608E8C /* AppRoute.swift */; };
+		987894472B1F65CF00608E8C /* WalkthroughRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894442B1F65CF00608E8C /* WalkthroughRouter.swift */; };
+		987894482B1F65CF00608E8C /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894452B1F65CF00608E8C /* WalkthroughViewController.swift */; };
+		987894492B1F65CF00608E8C /* WalkthroughViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894462B1F65CF00608E8C /* WalkthroughViewModel.swift */; };
+		9878944B2B1F65F600608E8C /* WalkthroughRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878944A2B1F65F600608E8C /* WalkthroughRoute.swift */; };
+		9878944D2B1F666400608E8C /* PlaceOnWindowTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878944C2B1F666400608E8C /* PlaceOnWindowTransition.swift */; };
+		987894502B1F680000608E8C /* PhotoBrowserDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878944F2B1F680000608E8C /* PhotoBrowserDelegate.swift */; };
+		987894532B1F686F00608E8C /* SKPhotoBrowserRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894522B1F686F00608E8C /* SKPhotoBrowserRoute.swift */; };
+		987894562B1F6C3500608E8C /* MainTabBarRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894552B1F6C3500608E8C /* MainTabBarRoute.swift */; };
+		987894582B1F6C6300608E8C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894572B1F6C6300608E8C /* MainTabBarController.swift */; };
+		9878945A2B1F8F9300608E8C /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894592B1F8F9300608E8C /* MainNavigationController.swift */; };
+		9878945F2B1F911900608E8C /* TransparentNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878945E2B1F911900608E8C /* TransparentNavigationController.swift */; };
+		987894652B1F985500608E8C /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894622B1F985500608E8C /* HomeRouter.swift */; };
+		987894662B1F985500608E8C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894632B1F985500608E8C /* HomeViewController.swift */; };
+		987894672B1F985500608E8C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894642B1F985500608E8C /* HomeViewModel.swift */; };
+		9878946B2B1F986900608E8C /* FavoritesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894682B1F986900608E8C /* FavoritesRouter.swift */; };
+		9878946C2B1F986900608E8C /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894692B1F986900608E8C /* FavoritesViewController.swift */; };
+		9878946D2B1F986900608E8C /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878946A2B1F986900608E8C /* FavoritesViewModel.swift */; };
+		B89787CD6072E6D7D834B9A9 /* Pods_Fodamy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE69D67AAC110F61DD233DC7 /* Pods_Fodamy.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98271F862B19206600097889 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98271F672B19206500097889 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98271F6E2B19206500097889;
+			remoteInfo = Fodamy;
+		};
+		98271F902B19206600097889 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98271F672B19206500097889 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98271F6E2B19206500097889;
+			remoteInfo = Fodamy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9805BFCE2B1A15F6009462B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9805BFD12B1A15FA009462B5 /* UIComponents.framework in Embed Frameworks */,
+				9805BFD42B1A15FE009462B5 /* Utilities.framework in Embed Frameworks */,
+				9805BFCD2B1A15F6009462B5 /* DataProvider.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9827203B2B192C3600097889 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9827203E2B192C3900097889 /* UIComponents.framework in Embed Frameworks */,
+				982720412B192C3C00097889 /* Utilities.framework in Embed Frameworks */,
+				9827203A2B192C3600097889 /* DataProvider.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0468AE7060A2ABEA8908C058 /* Pods-Fodamy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy.debug.xcconfig"; path = "Target Support Files/Pods-Fodamy/Pods-Fodamy.debug.xcconfig"; sourceTree = "<group>"; };
+		2DAC64BBFFF64EDD22FD16EA /* Pods_Fodamy_FodamyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fodamy_FodamyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		377913E5B7CC3FD677395DBD /* Pods-Fodamy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy.release.xcconfig"; path = "Target Support Files/Pods-Fodamy/Pods-Fodamy.release.xcconfig"; sourceTree = "<group>"; };
+		4F2793196E446CEE71B65F50 /* Pods_FodamyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FodamyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		508638A335E5661F2700CC29 /* Pods-Fodamy-FodamyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy-FodamyUITests.release.xcconfig"; path = "Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9805BFCB2B1A15F6009462B5 /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9805BFCF2B1A15FA009462B5 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9805BFD22B1A15FE009462B5 /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98271F6F2B19206500097889 /* Fodamy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fodamy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98271F722B19206500097889 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98271F7B2B19206600097889 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98271F7E2B19206600097889 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98271F802B19206600097889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98271F852B19206600097889 /* FodamyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FodamyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98271F892B19206600097889 /* FodamyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FodamyTests.swift; sourceTree = "<group>"; };
+		98271F8F2B19206600097889 /* FodamyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FodamyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98271F932B19206600097889 /* FodamyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FodamyUITests.swift; sourceTree = "<group>"; };
+		98271F952B19206600097889 /* FodamyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FodamyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9827200F2B1921AC00097889 /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		982720132B1921B400097889 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		982720162B1921BA00097889 /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		982720262B1922DF00097889 /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9827202B2B1926CC00097889 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9827202F2B19275400097889 /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		982720332B19282900097889 /* Fodamy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fodamy-Bridging-Header.h"; sourceTree = "<group>"; };
+		982720342B192BF200097889 /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		982720382B192C3600097889 /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9827203C2B192C3900097889 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9827203F2B192C3C00097889 /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		987894192B1F52D800608E8C /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		9878941B2B1F537F00608E8C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		9878941E2B1F540600608E8C /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		987894232B1F572600608E8C /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		987894242B1F572600608E8C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		987894252B1F572600608E8C /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		9878942B2B1F59B100608E8C /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		987894312B1F5E7F00608E8C /* APILogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILogger.swift; sourceTree = "<group>"; };
+		987894332B1F5EA700608E8C /* APIRequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestInterceptor.swift; sourceTree = "<group>"; };
+		987894422B1F650200608E8C /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		987894442B1F65CF00608E8C /* WalkthroughRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughRouter.swift; sourceTree = "<group>"; };
+		987894452B1F65CF00608E8C /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		987894462B1F65CF00608E8C /* WalkthroughViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewModel.swift; sourceTree = "<group>"; };
+		9878944A2B1F65F600608E8C /* WalkthroughRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughRoute.swift; sourceTree = "<group>"; };
+		9878944C2B1F666400608E8C /* PlaceOnWindowTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOnWindowTransition.swift; sourceTree = "<group>"; };
+		9878944F2B1F680000608E8C /* PhotoBrowserDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBrowserDelegate.swift; sourceTree = "<group>"; };
+		987894522B1F686F00608E8C /* SKPhotoBrowserRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKPhotoBrowserRoute.swift; sourceTree = "<group>"; };
+		987894552B1F6C3500608E8C /* MainTabBarRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarRoute.swift; sourceTree = "<group>"; };
+		987894572B1F6C6300608E8C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		987894592B1F8F9300608E8C /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		9878945E2B1F911900608E8C /* TransparentNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentNavigationController.swift; sourceTree = "<group>"; };
+		987894622B1F985500608E8C /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		987894632B1F985500608E8C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		987894642B1F985500608E8C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		987894682B1F986900608E8C /* FavoritesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRouter.swift; sourceTree = "<group>"; };
+		987894692B1F986900608E8C /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		9878946A2B1F986900608E8C /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		D0688B4CC909E3A48281E712 /* Pods-Fodamy-FodamyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy-FodamyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD817EC783A023E0EAB7DFE6 /* Pods-FodamyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FodamyTests.release.xcconfig"; path = "Target Support Files/Pods-FodamyTests/Pods-FodamyTests.release.xcconfig"; sourceTree = "<group>"; };
+		E020405B919BA5A950B39C0A /* Pods-FodamyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FodamyTests.debug.xcconfig"; path = "Target Support Files/Pods-FodamyTests/Pods-FodamyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE69D67AAC110F61DD233DC7 /* Pods_Fodamy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fodamy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98271F6C2B19206500097889 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9827203D2B192C3900097889 /* UIComponents.framework in Frameworks */,
+				982720402B192C3C00097889 /* Utilities.framework in Frameworks */,
+				982720392B192C3600097889 /* DataProvider.framework in Frameworks */,
+				B89787CD6072E6D7D834B9A9 /* Pods_Fodamy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98271F822B19206600097889 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DDB61BA5875507279D6AF44 /* Pods_FodamyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98271F8C2B19206600097889 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9805BFD02B1A15FA009462B5 /* UIComponents.framework in Frameworks */,
+				9805BFD32B1A15FE009462B5 /* Utilities.framework in Frameworks */,
+				9805BFCC2B1A15F6009462B5 /* DataProvider.framework in Frameworks */,
+				39C56157E747621B42046C65 /* Pods_Fodamy_FodamyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9805BEC22B1A0C28009462B5 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				98271F722B19206500097889 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		98271F662B19206500097889 = {
+			isa = PBXGroup;
+			children = (
+				98271F712B19206500097889 /* Fodamy */,
+				98271F882B19206600097889 /* FodamyTests */,
+				98271F922B19206600097889 /* FodamyUITests */,
+				98271F702B19206500097889 /* Products */,
+				9827200E2B1921AC00097889 /* Frameworks */,
+				AC304EF41F8BAB178A46069C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		98271F702B19206500097889 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98271F6F2B19206500097889 /* Fodamy.app */,
+				98271F852B19206600097889 /* FodamyTests.xctest */,
+				98271F8F2B19206600097889 /* FodamyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98271F712B19206500097889 /* Fodamy */ = {
+			isa = PBXGroup;
+			children = (
+				9878944E2B1F67EC00608E8C /* Delegates */,
+				987894292B1F58C300608E8C /* DataProvider */,
+				9805BEC22B1A0C28009462B5 /* AppDelegate */,
+				982720292B1923B000097889 /* Configuration */,
+				987894172B1F52A400608E8C /* Router */,
+				987894202B1F56DB00608E8C /* Scenes */,
+				98271F7B2B19206600097889 /* Assets.xcassets */,
+				98271F7D2B19206600097889 /* LaunchScreen.storyboard */,
+				98271F802B19206600097889 /* Info.plist */,
+			);
+			path = Fodamy;
+			sourceTree = "<group>";
+		};
+		98271F882B19206600097889 /* FodamyTests */ = {
+			isa = PBXGroup;
+			children = (
+				98271F892B19206600097889 /* FodamyTests.swift */,
+			);
+			path = FodamyTests;
+			sourceTree = "<group>";
+		};
+		98271F922B19206600097889 /* FodamyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				98271F932B19206600097889 /* FodamyUITests.swift */,
+				98271F952B19206600097889 /* FodamyUITestsLaunchTests.swift */,
+			);
+			path = FodamyUITests;
+			sourceTree = "<group>";
+		};
+		9827200E2B1921AC00097889 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9805BFD22B1A15FE009462B5 /* Utilities.framework */,
+				9805BFCF2B1A15FA009462B5 /* UIComponents.framework */,
+				9805BFCB2B1A15F6009462B5 /* DataProvider.framework */,
+				9827203F2B192C3C00097889 /* Utilities.framework */,
+				9827203C2B192C3900097889 /* UIComponents.framework */,
+				982720382B192C3600097889 /* DataProvider.framework */,
+				982720342B192BF200097889 /* DataProvider.framework */,
+				9827202F2B19275400097889 /* Utilities.framework */,
+				9827202B2B1926CC00097889 /* UIComponents.framework */,
+				982720262B1922DF00097889 /* DataProvider.framework */,
+				982720162B1921BA00097889 /* Utilities.framework */,
+				982720132B1921B400097889 /* UIComponents.framework */,
+				9827200F2B1921AC00097889 /* DataProvider.framework */,
+				FE69D67AAC110F61DD233DC7 /* Pods_Fodamy.framework */,
+				2DAC64BBFFF64EDD22FD16EA /* Pods_Fodamy_FodamyUITests.framework */,
+				4F2793196E446CEE71B65F50 /* Pods_FodamyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		982720292B1923B000097889 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				982720332B19282900097889 /* Fodamy-Bridging-Header.h */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		987894172B1F52A400608E8C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				987894512B1F686200608E8C /* Routes */,
+				987894412B1F64ED00608E8C /* Routers */,
+				987894182B1F52CD00608E8C /* Core */,
+				9878941D2B1F53F000608E8C /* Transitions */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		987894182B1F52CD00608E8C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				987894192B1F52D800608E8C /* Animator.swift */,
+				9878941B2B1F537F00608E8C /* Router.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9878941D2B1F53F000608E8C /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				9878941E2B1F540600608E8C /* Transition.swift */,
+				9878944C2B1F666400608E8C /* PlaceOnWindowTransition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		987894202B1F56DB00608E8C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				987894212B1F56E800608E8C /* Base */,
+				987894542B1F6BF100608E8C /* Main */,
+				987894222B1F56F400608E8C /* Walkthrough */,
+				987894602B1F981600608E8C /* Home */,
+				987894612B1F982A00608E8C /* Favorites */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		987894212B1F56E800608E8C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				987894232B1F572600608E8C /* BaseRouter.swift */,
+				987894252B1F572600608E8C /* BaseViewModel.swift */,
+				987894242B1F572600608E8C /* BaseViewController.swift */,
+				987894592B1F8F9300608E8C /* MainNavigationController.swift */,
+				9878945E2B1F911900608E8C /* TransparentNavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		987894222B1F56F400608E8C /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				987894442B1F65CF00608E8C /* WalkthroughRouter.swift */,
+				9878944A2B1F65F600608E8C /* WalkthroughRoute.swift */,
+				987894462B1F65CF00608E8C /* WalkthroughViewModel.swift */,
+				987894452B1F65CF00608E8C /* WalkthroughViewController.swift */,
+			);
+			path = Walkthrough;
+			sourceTree = "<group>";
+		};
+		987894292B1F58C300608E8C /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				9878942B2B1F59B100608E8C /* DataProvider.swift */,
+				987894312B1F5E7F00608E8C /* APILogger.swift */,
+				987894332B1F5EA700608E8C /* APIRequestInterceptor.swift */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		987894412B1F64ED00608E8C /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				987894422B1F650200608E8C /* AppRoute.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		9878944E2B1F67EC00608E8C /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				9878944F2B1F680000608E8C /* PhotoBrowserDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		987894512B1F686200608E8C /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				987894522B1F686F00608E8C /* SKPhotoBrowserRoute.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		987894542B1F6BF100608E8C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				987894552B1F6C3500608E8C /* MainTabBarRoute.swift */,
+				987894572B1F6C6300608E8C /* MainTabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		987894602B1F981600608E8C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				987894622B1F985500608E8C /* HomeRouter.swift */,
+				987894632B1F985500608E8C /* HomeViewController.swift */,
+				987894642B1F985500608E8C /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		987894612B1F982A00608E8C /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				987894682B1F986900608E8C /* FavoritesRouter.swift */,
+				987894692B1F986900608E8C /* FavoritesViewController.swift */,
+				9878946A2B1F986900608E8C /* FavoritesViewModel.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		AC304EF41F8BAB178A46069C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0468AE7060A2ABEA8908C058 /* Pods-Fodamy.debug.xcconfig */,
+				377913E5B7CC3FD677395DBD /* Pods-Fodamy.release.xcconfig */,
+				D0688B4CC909E3A48281E712 /* Pods-Fodamy-FodamyUITests.debug.xcconfig */,
+				508638A335E5661F2700CC29 /* Pods-Fodamy-FodamyUITests.release.xcconfig */,
+				E020405B919BA5A950B39C0A /* Pods-FodamyTests.debug.xcconfig */,
+				DD817EC783A023E0EAB7DFE6 /* Pods-FodamyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98271F6E2B19206500097889 /* Fodamy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98271F992B19206600097889 /* Build configuration list for PBXNativeTarget "Fodamy" */;
+			buildPhases = (
+				39A0AE5B4CA3115CC197CDAB /* [CP] Check Pods Manifest.lock */,
+				98271F6B2B19206500097889 /* Sources */,
+				98271F6C2B19206500097889 /* Frameworks */,
+				98271F6D2B19206500097889 /* Resources */,
+				9827203B2B192C3600097889 /* Embed Frameworks */,
+				C28E88718FD18DD3CB1918F1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fodamy;
+			productName = Fodamy;
+			productReference = 98271F6F2B19206500097889 /* Fodamy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98271F842B19206600097889 /* FodamyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98271F9C2B19206600097889 /* Build configuration list for PBXNativeTarget "FodamyTests" */;
+			buildPhases = (
+				618F63E0425154B59FF7ACA5 /* [CP] Check Pods Manifest.lock */,
+				98271F812B19206600097889 /* Sources */,
+				98271F822B19206600097889 /* Frameworks */,
+				98271F832B19206600097889 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98271F872B19206600097889 /* PBXTargetDependency */,
+			);
+			name = FodamyTests;
+			productName = FodamyTests;
+			productReference = 98271F852B19206600097889 /* FodamyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98271F8E2B19206600097889 /* FodamyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98271F9F2B19206600097889 /* Build configuration list for PBXNativeTarget "FodamyUITests" */;
+			buildPhases = (
+				71FCBA2FBF54625FA83A6B44 /* [CP] Check Pods Manifest.lock */,
+				98271F8B2B19206600097889 /* Sources */,
+				98271F8C2B19206600097889 /* Frameworks */,
+				98271F8D2B19206600097889 /* Resources */,
+				9805BFCE2B1A15F6009462B5 /* Embed Frameworks */,
+				2194652E652F1480DD67E30B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98271F912B19206600097889 /* PBXTargetDependency */,
+			);
+			name = FodamyUITests;
+			productName = FodamyUITests;
+			productReference = 98271F8F2B19206600097889 /* FodamyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98271F672B19206500097889 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					98271F6E2B19206500097889 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					98271F842B19206600097889 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 98271F6E2B19206500097889;
+					};
+					98271F8E2B19206600097889 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 98271F6E2B19206500097889;
+					};
+				};
+			};
+			buildConfigurationList = 98271F6A2B19206500097889 /* Build configuration list for PBXProject "Fodamy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98271F662B19206500097889;
+			productRefGroup = 98271F702B19206500097889 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98271F6E2B19206500097889 /* Fodamy */,
+				98271F842B19206600097889 /* FodamyTests */,
+				98271F8E2B19206600097889 /* FodamyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98271F6D2B19206500097889 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98271F7F2B19206600097889 /* LaunchScreen.storyboard in Resources */,
+				98271F7C2B19206600097889 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98271F832B19206600097889 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98271F8D2B19206600097889 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2194652E652F1480DD67E30B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39A0AE5B4CA3115CC197CDAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fodamy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		618F63E0425154B59FF7ACA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FodamyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71FCBA2FBF54625FA83A6B44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fodamy-FodamyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C28E88718FD18DD3CB1918F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fodamy/Pods-Fodamy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fodamy/Pods-Fodamy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fodamy/Pods-Fodamy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98271F6B2B19206500097889 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9878944B2B1F65F600608E8C /* WalkthroughRoute.swift in Sources */,
+				9878946C2B1F986900608E8C /* FavoritesViewController.swift in Sources */,
+				9878941F2B1F540600608E8C /* Transition.swift in Sources */,
+				9878945F2B1F911900608E8C /* TransparentNavigationController.swift in Sources */,
+				987894672B1F985500608E8C /* HomeViewModel.swift in Sources */,
+				987894502B1F680000608E8C /* PhotoBrowserDelegate.swift in Sources */,
+				987894482B1F65CF00608E8C /* WalkthroughViewController.swift in Sources */,
+				987894492B1F65CF00608E8C /* WalkthroughViewModel.swift in Sources */,
+				9878941A2B1F52D800608E8C /* Animator.swift in Sources */,
+				9878942C2B1F59B100608E8C /* DataProvider.swift in Sources */,
+				987894582B1F6C6300608E8C /* MainTabBarController.swift in Sources */,
+				9878944D2B1F666400608E8C /* PlaceOnWindowTransition.swift in Sources */,
+				987894322B1F5E7F00608E8C /* APILogger.swift in Sources */,
+				987894662B1F985500608E8C /* HomeViewController.swift in Sources */,
+				987894652B1F985500608E8C /* HomeRouter.swift in Sources */,
+				987894262B1F572600608E8C /* BaseRouter.swift in Sources */,
+				9878941C2B1F537F00608E8C /* Router.swift in Sources */,
+				987894282B1F572600608E8C /* BaseViewModel.swift in Sources */,
+				987894562B1F6C3500608E8C /* MainTabBarRoute.swift in Sources */,
+				987894342B1F5EA700608E8C /* APIRequestInterceptor.swift in Sources */,
+				987894532B1F686F00608E8C /* SKPhotoBrowserRoute.swift in Sources */,
+				9878946B2B1F986900608E8C /* FavoritesRouter.swift in Sources */,
+				9878946D2B1F986900608E8C /* FavoritesViewModel.swift in Sources */,
+				987894472B1F65CF00608E8C /* WalkthroughRouter.swift in Sources */,
+				987894272B1F572600608E8C /* BaseViewController.swift in Sources */,
+				9878945A2B1F8F9300608E8C /* MainNavigationController.swift in Sources */,
+				98271F732B19206500097889 /* AppDelegate.swift in Sources */,
+				987894432B1F650200608E8C /* AppRoute.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98271F812B19206600097889 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98271F8A2B19206600097889 /* FodamyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98271F8B2B19206600097889 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98271F962B19206600097889 /* FodamyUITestsLaunchTests.swift in Sources */,
+				98271F942B19206600097889 /* FodamyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98271F872B19206600097889 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98271F6E2B19206500097889 /* Fodamy */;
+			targetProxy = 98271F862B19206600097889 /* PBXContainerItemProxy */;
+		};
+		98271F912B19206600097889 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98271F6E2B19206500097889 /* Fodamy */;
+			targetProxy = 98271F902B19206600097889 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98271F7D2B19206600097889 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98271F7E2B19206600097889 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98271F972B19206600097889 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98271F982B19206600097889 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98271F9A2B19206600097889 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0468AE7060A2ABEA8908C058 /* Pods-Fodamy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fodamy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTINGf = "";
+				Objective = "";
+				PRODUCT_BUNDLE_IDENTIFIER = info.Fodamy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sehribanyildirim/Desktop/PROJELER/xcodeproje/Fodamy/Fodamy/Configuration/Fodamy-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98271F9B2B19206600097889 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 377913E5B7CC3FD677395DBD /* Pods-Fodamy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fodamy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				NEW_SETTINGf = "";
+				Objective = "";
+				PRODUCT_BUNDLE_IDENTIFIER = info.Fodamy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/sehribanyildirim/Desktop/PROJELER/xcodeproje/Fodamy/Fodamy/Configuration/Fodamy-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98271F9D2B19206600097889 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E020405B919BA5A950B39C0A /* Pods-FodamyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = info.FodamyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fodamy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fodamy";
+			};
+			name = Debug;
+		};
+		98271F9E2B19206600097889 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD817EC783A023E0EAB7DFE6 /* Pods-FodamyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = info.FodamyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fodamy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fodamy";
+			};
+			name = Release;
+		};
+		98271FA02B19206600097889 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0688B4CC909E3A48281E712 /* Pods-Fodamy-FodamyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = info.FodamyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fodamy;
+			};
+			name = Debug;
+		};
+		98271FA12B19206600097889 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 508638A335E5661F2700CC29 /* Pods-Fodamy-FodamyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = info.FodamyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fodamy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98271F6A2B19206500097889 /* Build configuration list for PBXProject "Fodamy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98271F972B19206600097889 /* Debug */,
+				98271F982B19206600097889 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98271F992B19206600097889 /* Build configuration list for PBXNativeTarget "Fodamy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98271F9A2B19206600097889 /* Debug */,
+				98271F9B2B19206600097889 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98271F9C2B19206600097889 /* Build configuration list for PBXNativeTarget "FodamyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98271F9D2B19206600097889 /* Debug */,
+				98271F9E2B19206600097889 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98271F9F2B19206600097889 /* Build configuration list for PBXNativeTarget "FodamyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98271FA02B19206600097889 /* Debug */,
+				98271FA12B19206600097889 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98271F672B19206500097889 /* Project object */;
+}
