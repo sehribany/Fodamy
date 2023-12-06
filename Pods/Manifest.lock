@@ -1,0 +1,52 @@
+PODS:
+  - Alamofire (5.8.1)
+  - IQKeyboardManagerSwift (6.5.16)
+  - KeychainSwift (20.0.0)
+  - Kingfisher (6.3.1)
+  - MobilliumBuilders (1.6.1)
+  - MobilliumUserDefaults (2.0.0)
+  - SKPhotoBrowser (7.1.0)
+  - SwiftEntryKit (2.0.0)
+  - SwiftGen (6.6.2)
+  - TinyConstraints (4.0.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - IQKeyboardManagerSwift
+  - KeychainSwift
+  - Kingfisher
+  - MobilliumBuilders
+  - MobilliumUserDefaults (~> 2.0)
+  - SKPhotoBrowser
+  - SwiftEntryKit
+  - SwiftGen
+  - TinyConstraints
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - KeychainSwift
+    - Kingfisher
+    - MobilliumBuilders
+    - MobilliumUserDefaults
+    - SKPhotoBrowser
+    - SwiftEntryKit
+    - SwiftGen
+    - TinyConstraints
+
+SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
+  KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  MobilliumBuilders: fe858e0098491eb989539ebe8ddf4d5f7db6809e
+  MobilliumUserDefaults: 002aa4bb663127d2dcc0814c17430c918a1e1445
+  SKPhotoBrowser: cd95b95a6f352fc2a50992721299f75ead77f9ab
+  SwiftEntryKit: 61b5fa36f34a97dd8013e48a7345bc4c4720be9a
+  SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
+  TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
+
+PODFILE CHECKSUM: b5760d4ac9132865ba265ca496e268e633c36171
+
+COCOAPODS: 1.11.3
