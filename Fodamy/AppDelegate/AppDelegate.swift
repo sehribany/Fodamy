@@ -19,7 +19,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
         AppRouter.shared.startApp()
         return true
-
     }
- 
 }
