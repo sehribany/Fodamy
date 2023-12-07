@@ -1,0 +1,10 @@
+/* 
+  Placeholder.strings
+  UIComponents
+
+  Created by Şehriban Yıldırım on 5.12.2023.
+  
+*/
+"username" = "Kullanıcı Adı";
+"email" = "E-mail Adresi";
+"password" = "Şifre";
