@@ -20,6 +20,14 @@
 		987894372B1F5F6B00608E8C /* APIDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894362B1F5F6B00608E8C /* APIDataProvider.swift */; };
 		987894392B1F601400608E8C /* APIRequestAdapter .swift in Sources */ = {isa = PBXBuildFile; fileRef = 987894382B1F601400608E8C /* APIRequestAdapter .swift */; };
 		9878943B2B1F608700608E8C /* APIDecodableResponseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878943A2B1F608700608E8C /* APIDecodableResponseRequest.swift */; };
+		98F187A02B21F07E00942D98 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1879F2B21F07E00942D98 /* Recipe.swift */; };
+		98F187A22B21F0CF00942D98 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F187A12B21F0CF00942D98 /* User.swift */; };
+		98F187A42B21F0F900942D98 /* NumberOfPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F187A32B21F0F900942D98 /* NumberOfPerson.swift */; };
+		98F187A62B21F11300942D98 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F187A52B21F11300942D98 /* Category.swift */; };
+		98F187A82B21F12C00942D98 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F187A72B21F12C00942D98 /* Image.swift */; };
+		98F187CF2B22026000942D98 /* GetRecipeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F187CE2B22026000942D98 /* GetRecipeRequest.swift */; };
+		98F187D12B22028500942D98 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F187D02B22028500942D98 /* Recipes.swift */; };
+		98F187D32B22029A00942D98 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F187D22B22029A00942D98 /* Pagination.swift */; };
 		C387605DC7C806F4879EB74C /* Pods_DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B42627933C181F441958307 /* Pods_DataProvider.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +50,14 @@
 		987894362B1F5F6B00608E8C /* APIDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDataProvider.swift; sourceTree = "<group>"; };
 		987894382B1F601400608E8C /* APIRequestAdapter .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIRequestAdapter .swift"; sourceTree = "<group>"; };
 		9878943A2B1F608700608E8C /* APIDecodableResponseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDecodableResponseRequest.swift; sourceTree = "<group>"; };
+		98F1879F2B21F07E00942D98 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		98F187A12B21F0CF00942D98 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		98F187A32B21F0F900942D98 /* NumberOfPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfPerson.swift; sourceTree = "<group>"; };
+		98F187A52B21F11300942D98 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		98F187A72B21F12C00942D98 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		98F187CE2B22026000942D98 /* GetRecipeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRecipeRequest.swift; sourceTree = "<group>"; };
+		98F187D02B22028500942D98 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
+		98F187D22B22029A00942D98 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		B5F624619F8D858A5A92225C /* Pods_DataProviderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataProviderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44E3497A8DBE9D589D10CB0 /* Pods-DataProviderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataProviderTests.debug.xcconfig"; path = "Target Support Files/Pods-DataProviderTests/Pods-DataProviderTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +139,8 @@
 		98271FF62B19217600097889 /* DataProvider */ = {
 			isa = PBXGroup;
 			children = (
+				98F187CC2B22022700942D98 /* Request */,
+				98F1879E2B21F07300942D98 /* Model */,
 				9805BFE02B1A19CF009462B5 /* Core */,
 				987894352B1F5F4600608E8C /* Manager */,
 				98271FF72B19217600097889 /* DataProvider.h */,
@@ -147,6 +165,36 @@
 				9878943A2B1F608700608E8C /* APIDecodableResponseRequest.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		98F1879E2B21F07300942D98 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				98F1879F2B21F07E00942D98 /* Recipe.swift */,
+				98F187A12B21F0CF00942D98 /* User.swift */,
+				98F187A32B21F0F900942D98 /* NumberOfPerson.swift */,
+				98F187A52B21F11300942D98 /* Category.swift */,
+				98F187A72B21F12C00942D98 /* Image.swift */,
+				98F187D02B22028500942D98 /* Recipes.swift */,
+				98F187D22B22029A00942D98 /* Pagination.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		98F187CC2B22022700942D98 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				98F187CD2B22024E00942D98 /* Recipes */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		98F187CD2B22024E00942D98 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				98F187CE2B22026000942D98 /* GetRecipeRequest.swift */,
+			);
+			path = Recipes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,16 +354,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98F187A42B21F0F900942D98 /* NumberOfPerson.swift in Sources */,
 				9805BFE22B1A19EA009462B5 /* DecodableResponseRequest.swift in Sources */,
+				98F187CF2B22026000942D98 /* GetRecipeRequest.swift in Sources */,
+				98F187D12B22028500942D98 /* Recipes.swift in Sources */,
 				9805BFE42B1A1A27009462B5 /* Typealias.swift in Sources */,
 				9805BFEA2B1A1B01009462B5 /* RequestEncoding.swift in Sources */,
+				98F187A82B21F12C00942D98 /* Image.swift in Sources */,
 				9878943B2B1F608700608E8C /* APIDecodableResponseRequest.swift in Sources */,
 				9805BFEC2B1A1BE6009462B5 /* DataProviderProtocol.swift in Sources */,
 				98271FF92B19217600097889 /* DataProvider.docc in Sources */,
 				9805BFE82B1A1ADF009462B5 /* RequestMethod.swift in Sources */,
 				9805BFE62B1A1A84009462B5 /* RequestProtocol.swift in Sources */,
+				98F187A22B21F0CF00942D98 /* User.swift in Sources */,
 				987894372B1F5F6B00608E8C /* APIDataProvider.swift in Sources */,
 				987894392B1F601400608E8C /* APIRequestAdapter .swift in Sources */,
+				98F187D32B22029A00942D98 /* Pagination.swift in Sources */,
+				98F187A02B21F07E00942D98 /* Recipe.swift in Sources */,
+				98F187A62B21F11300942D98 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
