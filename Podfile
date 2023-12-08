@@ -25,6 +25,7 @@ target 'Fodamy' do
   pod 'Kingfisher'
   pod 'SwiftEntryKit'
   pod 'TinyConstraints'
+  pod 'Segmentio'
 
   target 'FodamyTests' do
     inherit! :search_paths
@@ -66,6 +67,7 @@ target 'UIComponents' do
   pod 'MobilliumBuilders'
   pod 'TinyConstraints'
   pod 'Kingfisher'
+  pod 'Segmentio'
     
   target 'UIComponentsTests' do
     inherit! :search_paths
