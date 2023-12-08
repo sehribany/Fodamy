@@ -25,7 +25,6 @@ class MainNavigationController: UINavigationController {
             .resize(to: .init(width: 11, height: 18))
             .withRenderingMode(.alwaysTemplate)
             .withAlignmentRectInsets(.init(top: 0, left: 0, bottom: -2, right: 0))
-        
         let titleTextAttributes = AttributedStringDictionaryBuilder()
             .font(.font(.nunitoExtraBold, size: .medium))
             .foregroundColor(Asset.Colors.appWhite.color)
@@ -56,10 +55,4 @@ class MainNavigationController: UINavigationController {
         }
         navigationBar.backItem?.backBarButtonItem?.setTitlePositionAdjustment(.init(horizontal: 0, vertical: -13), for: .default)
     }
-    #if DEBUG
-    deinit {
-        debugPrint("deinit \(self)")
-    }
-    #endif
-
 }

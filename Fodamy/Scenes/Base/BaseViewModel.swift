@@ -34,10 +34,4 @@ class BaseViewModel<R: Router>: BaseViewModelProtocol {
         self.router       = router
         self.dataProvider = dataProvider
     }
-    
-    #if DEBUG
-    deinit {
-        debugPrint("deinit \(self)")
-    }
-    #endif
 }

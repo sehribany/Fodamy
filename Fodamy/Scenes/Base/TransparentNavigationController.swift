@@ -59,9 +59,4 @@ class TransparentNavigationController: UINavigationController {
         navigationBar.isTranslucent = true
         view.backgroundColor        = .clear
     }
-    #if DEBUG
-    deinit {
-        debugPrint("deinit \(self)")
-    }
-    #endif
 }
