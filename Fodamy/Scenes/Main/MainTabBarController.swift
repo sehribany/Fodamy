@@ -15,7 +15,7 @@ class MainTabBarController: UITabBarController {
         
         let homeViewController      = createHomeViewController()
         let favoritesViewController = createFavoritesViewController()
-        viewControllers = [homeViewController, favoritesViewController]
+        viewControllers             = [homeViewController, favoritesViewController]
 
     }
     
@@ -37,10 +37,10 @@ class MainTabBarController: UITabBarController {
     }
     
     private func createFavoritesViewController() -> UINavigationController {
-        let favoritesRouter = FavoritesRouter()
-        let favoritesViewModel = FavoritesViewModel(router: favoritesRouter)
+        let favoritesRouter         = FavoritesRouter()
+        let favoritesViewModel      = FavoritesViewModel(router: favoritesRouter)
         let favoritesViewController = FavoritesViewController(viewModel: favoritesViewModel)
-        let navController = MainNavigationController(rootViewController: favoritesViewController)
+        let navController           = MainNavigationController(rootViewController: favoritesViewController)
         configureTabBarIcons(navController: navController, icon: Asset.Icons.icHeart.image)
         favoritesRouter.viewController = favoritesViewController
         return navController
