@@ -35,10 +35,16 @@ class BaseViewController<V: BaseViewModelProtocol>: UIViewController {
     func showWarningToast(message: String) {
         ToastPresenter.showWarningToast(text: message)
     }
-    
-    #if DEBUG
-    deinit {
-        debugPrint("deinit \(self)")
+}
+
+// MARK: - NavigationBar Logo
+extension BaseViewController {
+    func addNavigationBarLogo() {
+        let image     = Asset.Images.imgLogoFodamy.image
+        let imageView = UIImageView()
+        imageView.size(CGSize(width: 110, height: 30))
+        imageView.contentMode    = .scaleAspectFit
+        imageView.image          = image
+        navigationItem.titleView = imageView
     }
-    #endif
 }
