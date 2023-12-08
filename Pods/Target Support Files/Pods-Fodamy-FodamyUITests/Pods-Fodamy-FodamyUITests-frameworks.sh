@@ -183,6 +183,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/MobilliumBuilders/MobilliumBuilders.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MobilliumUserDefaults/MobilliumUserDefaults.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SKPhotoBrowser/SKPhotoBrowser.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Segmentio/Segmentio.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftEntryKit/SwiftEntryKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework"
 fi
@@ -194,6 +195,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/MobilliumBuilders/MobilliumBuilders.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MobilliumUserDefaults/MobilliumUserDefaults.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SKPhotoBrowser/SKPhotoBrowser.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Segmentio/Segmentio.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftEntryKit/SwiftEntryKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework"
 fi

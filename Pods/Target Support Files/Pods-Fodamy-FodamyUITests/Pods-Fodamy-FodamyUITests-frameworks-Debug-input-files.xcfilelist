@@ -6,5 +6,6 @@ ${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
 ${BUILT_PRODUCTS_DIR}/MobilliumBuilders/MobilliumBuilders.framework
 ${BUILT_PRODUCTS_DIR}/MobilliumUserDefaults/MobilliumUserDefaults.framework
 ${BUILT_PRODUCTS_DIR}/SKPhotoBrowser/SKPhotoBrowser.framework
+${BUILT_PRODUCTS_DIR}/Segmentio/Segmentio.framework
 ${BUILT_PRODUCTS_DIR}/SwiftEntryKit/SwiftEntryKit.framework
 ${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework
