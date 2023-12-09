@@ -15,12 +15,10 @@ final class WalkthroughViewController: BaseViewController<WalkthroughViewModel> 
     private let pageControl = UIPageControlBuilder<PageControl>()
         .numberOfPages(4)
         .build()
- 
     private let dismissButton = UIButtonBuilder()
         .image(Asset.Icons.icClose.image.withRenderingMode(.alwaysTemplate))
         .tintColor(Asset.Colors.appCinder.color)
         .build()
-    
     private let nextButton = UIButtonBuilder()
         .cornerRadius(4)
         .backgroundColor(Asset.Colors.appRed.color)
@@ -42,6 +40,7 @@ final class WalkthroughViewController: BaseViewController<WalkthroughViewModel> 
         addSubviews()
     }
  }
+
 // MARK: UILayout
 extension WalkthroughViewController {
     private func addSubviews() {
@@ -53,9 +52,8 @@ extension WalkthroughViewController {
     private func addNextButton() {
         view.addSubview(nextButton)
         nextButton.bottomToSuperview(usingSafeArea: true)
-    
         nextButton.trailingToSuperview().constant = -15
-        nextButton.leadingToSuperview().constant = 15
+        nextButton.leadingToSuperview().constant  = 15
         nextButton.height(60)
     }
     
@@ -65,32 +63,33 @@ extension WalkthroughViewController {
           collectionView.leadingToSuperview()
           collectionView.trailingToSuperview()
           collectionView.bottomToTop(of: pageControl).constant = -30
-      }
+    }
     
     private func addPageControl() {
         view.addSubview(pageControl)
         pageControl.centerXToSuperview()
         pageControl.bottomToTop(of: nextButton).constant = -20
     }
+    
     private func addDismissButton() {
         view.addSubview(dismissButton)
         dismissButton.topToSuperview(usingSafeArea: true).constant = 25
-        dismissButton.trailingToSuperview().constant = -20
-       
+        dismissButton.trailingToSuperview().constant               = -20
     }
 }
 
 // MARK: Configure
 extension WalkthroughViewController {
     private func contentConfigure() {
-        view.backgroundColor = .white
-        collectionView.delegate = self
-        collectionView.dataSource = self
+        view.backgroundColor                 = .white
+        collectionView.delegate              = self
+        collectionView.dataSource            = self
         pageControl.isUserInteractionEnabled = false
         nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
         nextButton.setTitle(L10n.Modules.WalkThrough.next, for: .normal)
     }
 }
+
 // MARK: UICollectionViewDataSource
 extension WalkthroughViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -98,19 +97,12 @@ extension WalkthroughViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        // swiftlint:disable fatal_error unavailable_function
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WalkthroughCell.identifier, for: indexPath) as? WalkthroughCell else { fatalError("Could not dequeu WalkthroughCell") }
-        // swiftlint:enable fatal_error unavailable_function
-
-        let cellItem = viewModel.cellItemAt(indexPath: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WalkthroughCell.identifier, for: indexPath) as? WalkthroughCell else {fatalError("Could not dequeu WalkthroughCell")}
+        let cellItem   = viewModel.cellItemAt(indexPath: indexPath)
         cell.set(viewModel: cellItem)
-        print(viewModel.cellItemAt(indexPath: indexPath).titleText)
-        print(viewModel.cellItemAt(indexPath: indexPath).descriptionText)
         return cell
-
     }
 }
-extension WalkthroughViewController: UICollectionViewDelegate {}
 
 // MARK: - Actions
 extension WalkthroughViewController {
@@ -125,8 +117,6 @@ extension WalkthroughViewController {
         }
     }
 }
-
-// swiftlint:disable line_length
 // MARK: - UICollectionViewDelegateFlowLayout
 extension WalkthroughViewController: UICollectionViewDelegateFlowLayout {
     
