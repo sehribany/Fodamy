@@ -71,6 +71,34 @@
 		98F187C82B21FDD200942D98 /* LoginWarningPopupRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F187C72B21FDD200942D98 /* LoginWarningPopupRoute.swift */; };
 		98F67A432B23673F0060509D /* ImageSliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67A422B23673F0060509D /* ImageSliderViewModel.swift */; };
 		98F67A4A2B23684D0060509D /* ImageSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67A492B23684D0060509D /* ImageSliderView.swift */; };
+		98F67A922B2478690060509D /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67A912B2478690060509D /* NotificationNames.swift */; };
+		98F67A992B247CBC0060509D /* CommentListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67A962B247CBC0060509D /* CommentListRouter.swift */; };
+		98F67A9A2B247CBC0060509D /* CommentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67A972B247CBC0060509D /* CommentListViewController.swift */; };
+		98F67A9B2B247CBC0060509D /* CommentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67A982B247CBC0060509D /* CommentListViewModel.swift */; };
+		98F67A9D2B247CCC0060509D /* CommentListRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67A9C2B247CCC0060509D /* CommentListRoute.swift */; };
+		98F67AA12B247DAB0060509D /* CommentEditRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67A9E2B247DAB0060509D /* CommentEditRouter.swift */; };
+		98F67AA22B247DAB0060509D /* CommentEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67A9F2B247DAB0060509D /* CommentEditViewController.swift */; };
+		98F67AA32B247DAB0060509D /* CommentEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AA02B247DAB0060509D /* CommentEditViewModel.swift */; };
+		98F67AA52B247DB60060509D /* CommentEditRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AA42B247DB60060509D /* CommentEditRoute.swift */; };
+		98F67AB02B247FB40060509D /* CommentEditDeleteAlertViewRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AAF2B247FB40060509D /* CommentEditDeleteAlertViewRoute.swift */; };
+		98F67AC12B24861D0060509D /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67ABE2B24861D0060509D /* RegisterRouter.swift */; };
+		98F67AC22B24861D0060509D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67ABF2B24861D0060509D /* RegisterViewController.swift */; };
+		98F67AC32B24861D0060509D /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AC02B24861D0060509D /* RegisterViewModel.swift */; };
+		98F67AC52B24862A0060509D /* RegisterRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AC42B24862A0060509D /* RegisterRoute.swift */; };
+		98F67AD62B2489A30060509D /* Validaton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AD52B2489A30060509D /* Validaton.swift */; };
+		98F67ADA2B248A940060509D /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AD72B248A940060509D /* LoginRouter.swift */; };
+		98F67ADB2B248A940060509D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AD82B248A940060509D /* LoginViewController.swift */; };
+		98F67ADC2B248A940060509D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AD92B248A940060509D /* LoginViewModel.swift */; };
+		98F67ADE2B248A9F0060509D /* LoginRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67ADD2B248A9F0060509D /* LoginRoute.swift */; };
+		98F67AE22B248F640060509D /* UnfollowAlertViewRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AE12B248F640060509D /* UnfollowAlertViewRoute.swift */; };
+		98F67AE42B24903B0060509D /* ShareSheetRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AE32B24903B0060509D /* ShareSheetRoute.swift */; };
+		98F67AF02B2495EF0060509D /* FavoritesRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AEF2B2495EF0060509D /* FavoritesRoute.swift */; };
+		98F67AFC2B2498030060509D /* PasswordResetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AF92B2498030060509D /* PasswordResetRouter.swift */; };
+		98F67AFD2B2498030060509D /* PasswordResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AFA2B2498030060509D /* PasswordResetViewController.swift */; };
+		98F67AFE2B2498030060509D /* PasswordResetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AFB2B2498030060509D /* PasswordResetViewModel.swift */; };
+		98F67B002B2498120060509D /* PasswordResetRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AFF2B2498120060509D /* PasswordResetRoute.swift */; };
+		98F67B0E2B24A76F0060509D /* CategoryWithRecipesCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67B0D2B24A76F0060509D /* CategoryWithRecipesCellModel.swift */; };
+		98F67B102B24A7B30060509D /* CommentCellModel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67B0F2B24A7B30060509D /* CommentCellModel+Extensions.swift */; };
 		B89787CD6072E6D7D834B9A9 /* Pods_Fodamy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE69D67AAC110F61DD233DC7 /* Pods_Fodamy.framework */; };
 /* End PBXBuildFile section */
 
@@ -194,6 +222,34 @@
 		98F187C72B21FDD200942D98 /* LoginWarningPopupRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWarningPopupRoute.swift; sourceTree = "<group>"; };
 		98F67A422B23673F0060509D /* ImageSliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSliderViewModel.swift; sourceTree = "<group>"; };
 		98F67A492B23684D0060509D /* ImageSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSliderView.swift; sourceTree = "<group>"; };
+		98F67A912B2478690060509D /* NotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNames.swift; sourceTree = "<group>"; };
+		98F67A962B247CBC0060509D /* CommentListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListRouter.swift; sourceTree = "<group>"; };
+		98F67A972B247CBC0060509D /* CommentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListViewController.swift; sourceTree = "<group>"; };
+		98F67A982B247CBC0060509D /* CommentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListViewModel.swift; sourceTree = "<group>"; };
+		98F67A9C2B247CCC0060509D /* CommentListRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListRoute.swift; sourceTree = "<group>"; };
+		98F67A9E2B247DAB0060509D /* CommentEditRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentEditRouter.swift; sourceTree = "<group>"; };
+		98F67A9F2B247DAB0060509D /* CommentEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentEditViewController.swift; sourceTree = "<group>"; };
+		98F67AA02B247DAB0060509D /* CommentEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentEditViewModel.swift; sourceTree = "<group>"; };
+		98F67AA42B247DB60060509D /* CommentEditRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentEditRoute.swift; sourceTree = "<group>"; };
+		98F67AAF2B247FB40060509D /* CommentEditDeleteAlertViewRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentEditDeleteAlertViewRoute.swift; sourceTree = "<group>"; };
+		98F67ABE2B24861D0060509D /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		98F67ABF2B24861D0060509D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		98F67AC02B24861D0060509D /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		98F67AC42B24862A0060509D /* RegisterRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRoute.swift; sourceTree = "<group>"; };
+		98F67AD52B2489A30060509D /* Validaton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validaton.swift; sourceTree = "<group>"; };
+		98F67AD72B248A940060509D /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		98F67AD82B248A940060509D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		98F67AD92B248A940060509D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		98F67ADD2B248A9F0060509D /* LoginRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoute.swift; sourceTree = "<group>"; };
+		98F67AE12B248F640060509D /* UnfollowAlertViewRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfollowAlertViewRoute.swift; sourceTree = "<group>"; };
+		98F67AE32B24903B0060509D /* ShareSheetRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetRoute.swift; sourceTree = "<group>"; };
+		98F67AEF2B2495EF0060509D /* FavoritesRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRoute.swift; sourceTree = "<group>"; };
+		98F67AF92B2498030060509D /* PasswordResetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetRouter.swift; sourceTree = "<group>"; };
+		98F67AFA2B2498030060509D /* PasswordResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetViewController.swift; sourceTree = "<group>"; };
+		98F67AFB2B2498030060509D /* PasswordResetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetViewModel.swift; sourceTree = "<group>"; };
+		98F67AFF2B2498120060509D /* PasswordResetRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetRoute.swift; sourceTree = "<group>"; };
+		98F67B0D2B24A76F0060509D /* CategoryWithRecipesCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryWithRecipesCellModel.swift; sourceTree = "<group>"; };
+		98F67B0F2B24A7B30060509D /* CommentCellModel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommentCellModel+Extensions.swift"; sourceTree = "<group>"; };
 		D0688B4CC909E3A48281E712 /* Pods-Fodamy-FodamyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fodamy-FodamyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fodamy-FodamyUITests/Pods-Fodamy-FodamyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD817EC783A023E0EAB7DFE6 /* Pods-FodamyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FodamyTests.release.xcconfig"; path = "Target Support Files/Pods-FodamyTests/Pods-FodamyTests.release.xcconfig"; sourceTree = "<group>"; };
 		E020405B919BA5A950B39C0A /* Pods-FodamyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FodamyTests.debug.xcconfig"; path = "Target Support Files/Pods-FodamyTests/Pods-FodamyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -267,12 +323,15 @@
 		98271F712B19206500097889 /* Fodamy */ = {
 			isa = PBXGroup;
 			children = (
-				9878944E2B1F67EC00608E8C /* Delegates */,
-				987894292B1F58C300608E8C /* DataProvider */,
+				98F67B0C2B24A74B0060509D /* UIComponenta */,
 				9805BEC22B1A0C28009462B5 /* AppDelegate */,
 				982720292B1923B000097889 /* Configuration */,
+				98F67A902B2478550060509D /* Constants */,
+				9878944E2B1F67EC00608E8C /* Delegates */,
+				987894292B1F58C300608E8C /* DataProvider */,
 				987894172B1F52A400608E8C /* Router */,
 				987894202B1F56DB00608E8C /* Scenes */,
+				98F67AD42B2489910060509D /* Validation */,
 				98271F7B2B19206600097889 /* Assets.xcassets */,
 				98271F7D2B19206600097889 /* LaunchScreen.storyboard */,
 				98271F802B19206600097889 /* Info.plist */,
@@ -369,6 +428,8 @@
 				98F187882B21EA4200942D98 /* Recipes */,
 				98F187B82B21FD4400942D98 /* RecipeDetail */,
 				98F67A412B2367220060509D /* ImageSlider */,
+				98F67ABA2B2485D20060509D /* Auth */,
+				98F67A932B247C660060509D /* Comments */,
 				987894612B1F982A00608E8C /* Favorites */,
 				98F187B72B21FD2700942D98 /* LoginWarning */,
 			);
@@ -428,6 +489,9 @@
 			isa = PBXGroup;
 			children = (
 				987894522B1F686F00608E8C /* SKPhotoBrowserRoute.swift */,
+				98F67AAF2B247FB40060509D /* CommentEditDeleteAlertViewRoute.swift */,
+				98F67AE12B248F640060509D /* UnfollowAlertViewRoute.swift */,
+				98F67AE32B24903B0060509D /* ShareSheetRoute.swift */,
 			);
 			path = Routes;
 			sourceTree = "<group>";
@@ -455,9 +519,10 @@
 		987894612B1F982A00608E8C /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
+				98F67AEF2B2495EF0060509D /* FavoritesRoute.swift */,
 				987894682B1F986900608E8C /* FavoritesRouter.swift */,
-				987894692B1F986900608E8C /* FavoritesViewController.swift */,
 				9878946A2B1F986900608E8C /* FavoritesViewModel.swift */,
+				987894692B1F986900608E8C /* FavoritesViewController.swift */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -476,10 +541,10 @@
 		98F187B72B21FD2700942D98 /* LoginWarning */ = {
 			isa = PBXGroup;
 			children = (
+				98F187C72B21FDD200942D98 /* LoginWarningPopupRoute.swift */,
 				98F187C12B21FDC900942D98 /* LoginWarningPopupRouter.swift */,
 				98F187C22B21FDC900942D98 /* LoginWarningPopupViewController.swift */,
 				98F187C32B21FDC900942D98 /* LoginWarningPopupViewModel.swift */,
-				98F187C72B21FDD200942D98 /* LoginWarningPopupRoute.swift */,
 			);
 			path = LoginWarning;
 			sourceTree = "<group>";
@@ -502,6 +567,105 @@
 				98F67A492B23684D0060509D /* ImageSliderView.swift */,
 			);
 			path = ImageSlider;
+			sourceTree = "<group>";
+		};
+		98F67A902B2478550060509D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				98F67A912B2478690060509D /* NotificationNames.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		98F67A932B247C660060509D /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				98F67A942B247C780060509D /* CommentList */,
+				98F67A952B247C840060509D /* CommentEdit */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		98F67A942B247C780060509D /* CommentList */ = {
+			isa = PBXGroup;
+			children = (
+				98F67A9C2B247CCC0060509D /* CommentListRoute.swift */,
+				98F67A962B247CBC0060509D /* CommentListRouter.swift */,
+				98F67A982B247CBC0060509D /* CommentListViewModel.swift */,
+				98F67A972B247CBC0060509D /* CommentListViewController.swift */,
+			);
+			path = CommentList;
+			sourceTree = "<group>";
+		};
+		98F67A952B247C840060509D /* CommentEdit */ = {
+			isa = PBXGroup;
+			children = (
+				98F67AA42B247DB60060509D /* CommentEditRoute.swift */,
+				98F67A9E2B247DAB0060509D /* CommentEditRouter.swift */,
+				98F67AA02B247DAB0060509D /* CommentEditViewModel.swift */,
+				98F67A9F2B247DAB0060509D /* CommentEditViewController.swift */,
+			);
+			path = CommentEdit;
+			sourceTree = "<group>";
+		};
+		98F67ABA2B2485D20060509D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				98F67ABC2B2485ED0060509D /* Register */,
+				98F67ABB2B2485E60060509D /* Login */,
+				98F67ABD2B2485F70060509D /* Password Reset */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		98F67ABB2B2485E60060509D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				98F67ADD2B248A9F0060509D /* LoginRoute.swift */,
+				98F67AD72B248A940060509D /* LoginRouter.swift */,
+				98F67AD92B248A940060509D /* LoginViewModel.swift */,
+				98F67AD82B248A940060509D /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		98F67ABC2B2485ED0060509D /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				98F67AC42B24862A0060509D /* RegisterRoute.swift */,
+				98F67ABE2B24861D0060509D /* RegisterRouter.swift */,
+				98F67AC02B24861D0060509D /* RegisterViewModel.swift */,
+				98F67ABF2B24861D0060509D /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		98F67ABD2B2485F70060509D /* Password Reset */ = {
+			isa = PBXGroup;
+			children = (
+				98F67AFF2B2498120060509D /* PasswordResetRoute.swift */,
+				98F67AF92B2498030060509D /* PasswordResetRouter.swift */,
+				98F67AFB2B2498030060509D /* PasswordResetViewModel.swift */,
+				98F67AFA2B2498030060509D /* PasswordResetViewController.swift */,
+			);
+			path = "Password Reset";
+			sourceTree = "<group>";
+		};
+		98F67AD42B2489910060509D /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				98F67AD52B2489A30060509D /* Validaton.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		98F67B0C2B24A74B0060509D /* UIComponenta */ = {
+			isa = PBXGroup;
+			children = (
+				98F67B0D2B24A76F0060509D /* CategoryWithRecipesCellModel.swift */,
+				98F67B0F2B24A7B30060509D /* CommentCellModel+Extensions.swift */,
+			);
+			path = UIComponenta;
 			sourceTree = "<group>";
 		};
 		AC304EF41F8BAB178A46069C /* Pods */ = {
@@ -757,20 +921,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98F67AD62B2489A30060509D /* Validaton.swift in Sources */,
 				98F1878D2B21EA6000942D98 /* RecipesViewController.swift in Sources */,
 				9878944B2B1F65F600608E8C /* WalkthroughRoute.swift in Sources */,
 				9878946C2B1F986900608E8C /* FavoritesViewController.swift in Sources */,
+				98F67AFD2B2498030060509D /* PasswordResetViewController.swift in Sources */,
 				98F1878E2B21EA6000942D98 /* RecipesViewModel.swift in Sources */,
 				9878941F2B1F540600608E8C /* Transition.swift in Sources */,
+				98F67AC12B24861D0060509D /* RegisterRouter.swift in Sources */,
+				98F67AFC2B2498030060509D /* PasswordResetRouter.swift in Sources */,
 				98F187C02B21FD8A00942D98 /* RecipeDetailRoute.swift in Sources */,
 				9878945F2B1F911900608E8C /* TransparentNavigationController.swift in Sources */,
+				98F67AC52B24862A0060509D /* RegisterRoute.swift in Sources */,
 				987894672B1F985500608E8C /* HomeViewModel.swift in Sources */,
+				98F67AB02B247FB40060509D /* CommentEditDeleteAlertViewRoute.swift in Sources */,
 				98F187912B21EA8D00942D98 /* RecipesRoute.swift in Sources */,
+				98F67B0E2B24A76F0060509D /* CategoryWithRecipesCellModel.swift in Sources */,
 				98F67A4A2B23684D0060509D /* ImageSliderView.swift in Sources */,
 				987894502B1F680000608E8C /* PhotoBrowserDelegate.swift in Sources */,
 				98F187C62B21FDC900942D98 /* LoginWarningPopupViewModel.swift in Sources */,
 				987894482B1F65CF00608E8C /* WalkthroughViewController.swift in Sources */,
 				987894492B1F65CF00608E8C /* WalkthroughViewModel.swift in Sources */,
+				98F67A992B247CBC0060509D /* CommentListRouter.swift in Sources */,
 				98F187C82B21FDD200942D98 /* LoginWarningPopupRoute.swift in Sources */,
 				9878941A2B1F52D800608E8C /* Animator.swift in Sources */,
 				98F1878C2B21EA6000942D98 /* RecipesRouter.swift in Sources */,
@@ -781,27 +953,47 @@
 				987894322B1F5E7F00608E8C /* APILogger.swift in Sources */,
 				987894662B1F985500608E8C /* HomeViewController.swift in Sources */,
 				987894652B1F985500608E8C /* HomeRouter.swift in Sources */,
+				98F67B102B24A7B30060509D /* CommentCellModel+Extensions.swift in Sources */,
+				98F67ADA2B248A940060509D /* LoginRouter.swift in Sources */,
 				987894262B1F572600608E8C /* BaseRouter.swift in Sources */,
+				98F67AA22B247DAB0060509D /* CommentEditViewController.swift in Sources */,
 				9878941C2B1F537F00608E8C /* Router.swift in Sources */,
 				987894282B1F572600608E8C /* BaseViewModel.swift in Sources */,
 				98F187872B21E1B700942D98 /* ModalTransition.swift in Sources */,
 				98F67A432B23673F0060509D /* ImageSliderViewModel.swift in Sources */,
+				98F67A922B2478690060509D /* NotificationNames.swift in Sources */,
 				98F187BD2B21FD6F00942D98 /* RecipeDetailViewController.swift in Sources */,
 				987894562B1F6C3500608E8C /* MainTabBarRoute.swift in Sources */,
+				98F67AE42B24903B0060509D /* ShareSheetRoute.swift in Sources */,
 				987894342B1F5EA700608E8C /* APIRequestInterceptor.swift in Sources */,
 				98F187C52B21FDC900942D98 /* LoginWarningPopupViewController.swift in Sources */,
+				98F67A9B2B247CBC0060509D /* CommentListViewModel.swift in Sources */,
 				987894532B1F686F00608E8C /* SKPhotoBrowserRoute.swift in Sources */,
 				98F187BC2B21FD6F00942D98 /* RecipeDetailRouter.swift in Sources */,
+				98F67ADB2B248A940060509D /* LoginViewController.swift in Sources */,
 				9878946B2B1F986900608E8C /* FavoritesRouter.swift in Sources */,
+				98F67AC22B24861D0060509D /* RegisterViewController.swift in Sources */,
+				98F67AF02B2495EF0060509D /* FavoritesRoute.swift in Sources */,
 				9878946D2B1F986900608E8C /* FavoritesViewModel.swift in Sources */,
 				987894472B1F65CF00608E8C /* WalkthroughRouter.swift in Sources */,
+				98F67A9D2B247CCC0060509D /* CommentListRoute.swift in Sources */,
+				98F67A9A2B247CBC0060509D /* CommentListViewController.swift in Sources */,
+				98F67AFE2B2498030060509D /* PasswordResetViewModel.swift in Sources */,
+				98F67ADE2B248A9F0060509D /* LoginRoute.swift in Sources */,
 				98F187852B21E0DD00942D98 /* HomeRoute.swift in Sources */,
 				98F187BE2B21FD6F00942D98 /* RecipeDetailViewModel.swift in Sources */,
 				987894272B1F572600608E8C /* BaseViewController.swift in Sources */,
+				98F67AA52B247DB60060509D /* CommentEditRoute.swift in Sources */,
+				98F67B002B2498120060509D /* PasswordResetRoute.swift in Sources */,
+				98F67AA12B247DAB0060509D /* CommentEditRouter.swift in Sources */,
 				98F187C42B21FDC900942D98 /* LoginWarningPopupRouter.swift in Sources */,
+				98F67AA32B247DAB0060509D /* CommentEditViewModel.swift in Sources */,
 				9878945A2B1F8F9300608E8C /* MainNavigationController.swift in Sources */,
+				98F67AC32B24861D0060509D /* RegisterViewModel.swift in Sources */,
 				98271F732B19206500097889 /* AppDelegate.swift in Sources */,
 				987894432B1F650200608E8C /* AppRoute.swift in Sources */,
+				98F67AE22B248F640060509D /* UnfollowAlertViewRoute.swift in Sources */,
+				98F67ADC2B248A940060509D /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
