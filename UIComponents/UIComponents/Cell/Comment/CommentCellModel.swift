@@ -6,6 +6,8 @@
 //
 
 import Utilities
+import DataProvider
+import MobilliumUserDefaults
 
 public protocol CommentCellDataSource: AnyObject {
     var userId        : Int { get }
@@ -63,4 +65,3 @@ public final class CommentCellModel: CommentCellProtocol {
         self.isFollowing    = isFollowing
     }
 }
-
