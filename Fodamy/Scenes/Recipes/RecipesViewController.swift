@@ -11,7 +11,7 @@ import UIComponents
 final class RecipesViewController: BaseViewController<RecipesViewModel> {
     
     private let collectionView: UICollectionView = {
-        let layout         = UICollectionViewFlowLayout()
+        let layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.register(RecipeCell.self, forCellWithReuseIdentifier: RecipeCell.identifier)
         return collectionView
@@ -31,6 +31,10 @@ final class RecipesViewController: BaseViewController<RecipesViewModel> {
             self.collectionView.reloadData()
         }
     }
+}
+
+// MARK: - UILayout
+extension RecipesViewController {
     
     private func addSubViews() {
         addCollectionView()
@@ -40,21 +44,22 @@ final class RecipesViewController: BaseViewController<RecipesViewModel> {
         view.addSubview(collectionView)
         collectionView.edgesToSuperview()
     }
-    
-    private func configureContents() {
-        collectionView.backgroundColor = Asset.Colors.appSecondaryBackground.color
-        collectionView.delegate        = self
-        collectionView.dataSource      = self
-    }
-    
 }
 
-extension RecipesViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
+// MARK: - Configure and Set Localize
+extension RecipesViewController {
+    private func configureContents() {
+        collectionView.backgroundColor = Asset.Colors.appSecondaryBackground.color
+        collectionView.delegate = self
+        collectionView.dataSource = self
+    }
+}
+
+// MARK: - UICollectionViewDataSource
+extension RecipesViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         viewModel.showRecipeDetailScreen(at: indexPath)
     }
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return  viewModel.numberOfItemsAt(section: section)
     }
@@ -65,6 +70,10 @@ extension RecipesViewController: UICollectionViewDataSource, UICollectionViewDel
         cell.set(viewModel: cellItem)
         return cell
     }
+}
+
+// MARK: - UICollectionViewDelegateFlowLayout
+extension RecipesViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
@@ -82,6 +91,9 @@ extension RecipesViewController: UICollectionViewDataSource, UICollectionViewDel
         let width = UIScreen.main.bounds.width
         return CGSize(width: width, height: width + 145 )
     }
+}
+// MARK: - UIScrollViewDelegate
+extension RecipesViewController {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let position = scrollView.contentOffset.y
