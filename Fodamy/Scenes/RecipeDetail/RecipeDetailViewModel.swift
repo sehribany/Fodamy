@@ -5,6 +5,7 @@
 //  Created by Şehriban Yıldırım on 7.12.2023.
 //
 import DataProvider
+import UIComponents
 import KeychainSwift
 
 protocol RecipeDetailViewDataSource {
@@ -22,20 +23,21 @@ protocol RecipeDetailViewEventSource {
 }
 
 protocol RecipeDetailViewProtocol: RecipeDetailViewDataSource, RecipeDetailViewEventSource {
-    //func likeButtonTapped()
-    //func followButtonTapped()
-    //func commentButtonTapped()
-    //func didSelectComment()
+    func likeButtonTapped()
+    func followButtonTapped()
+    func commentButtonTapped()
+    func didSelectComment()
 }
 
 final class RecipeDetailViewModel: BaseViewModel<RecipeDetailRouter>, RecipeDetailViewProtocol {
-
     var likeCount           : Int?
     var recipeDetail        : RecipeDetail?
     var reloadCommentData   : VoidClosure?
     var reloadDetailData    : VoidClosure?
     var recipe              : Recipe
     var imageSliderCellItems: [ImageSliderCellProtocol] = []
+    var commentCellItems    : [CommentCellProtocol] = []
+    
     let keychain = KeychainSwift()
 
     init(recipe: Recipe, router: RecipeDetailRouter) {
@@ -51,7 +53,6 @@ final class RecipeDetailViewModel: BaseViewModel<RecipeDetailRouter>, RecipeDeta
         return commentCellItems[indexPath.row]
     }
     
-    var commentCellItems: [CommentCellProtocol] = []
     func showInfo() {
         recipe.images?.forEach({ image in
             imageSliderCellItems.append(ImageSliderCellModel(imageUrl: image.url ?? "", isEditorChoice: recipe.isEditorChoice))
@@ -61,16 +62,51 @@ final class RecipeDetailViewModel: BaseViewModel<RecipeDetailRouter>, RecipeDeta
 // MARK: - Actions
 extension RecipeDetailViewModel {
     
+    func likeButtonTapped() {
+        guard keychain.get(Keychain.token) != nil else {
+            router.presentLoginWarningPopup(loginHandler: { [weak self] in
+                self?.router.presentLogin()
+            })
+            return
+        }
+        recipeLikeRequest()
+    }
+    
+    func followButtonTapped() {
+        guard keychain.get(Keychain.token) != nil else {
+            router.presentLoginWarningPopup(loginHandler: { [weak self] in
+                self?.router.presentLogin()
+            })
+            return
+        }
+        switch recipeDetail?.user.isFollowing ?? false {
+        case true:
+            router.presentUnfollowAlertView {
+                self.userFollowRequest(followType: .unfollow)
+            }
+        case false:
+            self.userFollowRequest(followType: .follow)
+        }
+    }
+    
+    func commentButtonTapped() {
+        router.pushCommentList(recipeId: recipe.id, isKeyboardOpen: true)
+    }
+    
+    func didSelectComment() {
+        router.pushCommentList(recipeId: recipe.id, isKeyboardOpen: false)
+    }
     func resetData() {
         commentCellItems.removeAll()
         imageSliderCellItems.removeAll()
     }
     
     func shareButtonTapped() {
-        let title          = recipe.title
+        let title = recipe.title
         let imageUrlString = recipe.user.image?.url
         guard let imageUrl = URL(string: imageUrlString ?? "") else { return }
-        let items: [Any]   = [title ?? "", imageUrl]
+        let items: [Any] = [title ?? "", imageUrl]
+        router.presentShareSheet(items: items)
     }
 }
 
@@ -107,7 +143,7 @@ extension RecipeDetailViewModel {
 
     private func recipeLikeRequest() {
         let recipeId = recipe.id
-        let isLiked  = recipeDetail?.isLiked ?? false
+        let isLiked = recipeDetail?.isLiked ?? false
         let request: RecipeLikeRequest
         switch isLiked {
         case true:

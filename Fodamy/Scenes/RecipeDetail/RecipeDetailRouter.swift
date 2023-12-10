@@ -7,5 +7,9 @@
 
 final class RecipeDetailRouter: Router, RecipeDetailRouter.Routes {
     typealias Routes =
-    LoginWarningPopupRoute
+    LoginWarningPopupRoute &
+    LoginRoute &
+    UnfollowAlertViewRoute &
+    ShareSheetRoute &
+    CommentListRoute
 }
