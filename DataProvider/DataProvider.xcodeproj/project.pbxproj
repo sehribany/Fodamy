@@ -39,6 +39,15 @@
 		98F67A6B2B23719F0060509D /* MainCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67A6A2B23719F0060509D /* MainCategory.swift */; };
 		98F67A6D2B2371C80060509D /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67A6C2B2371C80060509D /* BaseResponse.swift */; };
 		98F67A722B2373BD0060509D /* UserFollowRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67A712B2373BD0060509D /* UserFollowRequest.swift */; };
+		98F67AAA2B247ED50060509D /* PostRecipeCommentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AA92B247ED50060509D /* PostRecipeCommentRequest.swift */; };
+		98F67AAC2B247EF60060509D /* DeleteRecipeCommentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AAB2B247EF60060509D /* DeleteRecipeCommentRequest.swift */; };
+		98F67AAE2B247F080060509D /* EditRecipeCommentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AAD2B247F080060509D /* EditRecipeCommentRequest.swift */; };
+		98F67AC82B2486790060509D /* LoginRequst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AC72B2486790060509D /* LoginRequst.swift */; };
+		98F67ACA2B2486970060509D /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67AC92B2486970060509D /* RegisterRequest.swift */; };
+		98F67ACC2B2486AD0060509D /* ForgotPasswordRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67ACB2B2486AD0060509D /* ForgotPasswordRequest.swift */; };
+		98F67ACE2B2486EA0060509D /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67ACD2B2486EA0060509D /* Auth.swift */; };
+		98F67AD02B2487290060509D /* GetRecipeCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67ACF2B2487290060509D /* GetRecipeCategories.swift */; };
+		98F67AE02B248B340060509D /* LogoutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F67ADF2B248B340060509D /* LogoutRequest.swift */; };
 		C387605DC7C806F4879EB74C /* Pods_DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B42627933C181F441958307 /* Pods_DataProvider.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +89,15 @@
 		98F67A6A2B23719F0060509D /* MainCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCategory.swift; sourceTree = "<group>"; };
 		98F67A6C2B2371C80060509D /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		98F67A712B2373BD0060509D /* UserFollowRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowRequest.swift; sourceTree = "<group>"; };
+		98F67AA92B247ED50060509D /* PostRecipeCommentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRecipeCommentRequest.swift; sourceTree = "<group>"; };
+		98F67AAB2B247EF60060509D /* DeleteRecipeCommentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRecipeCommentRequest.swift; sourceTree = "<group>"; };
+		98F67AAD2B247F080060509D /* EditRecipeCommentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRecipeCommentRequest.swift; sourceTree = "<group>"; };
+		98F67AC72B2486790060509D /* LoginRequst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequst.swift; sourceTree = "<group>"; };
+		98F67AC92B2486970060509D /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		98F67ACB2B2486AD0060509D /* ForgotPasswordRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRequest.swift; sourceTree = "<group>"; };
+		98F67ACD2B2486EA0060509D /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		98F67ACF2B2487290060509D /* GetRecipeCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRecipeCategories.swift; sourceTree = "<group>"; };
+		98F67ADF2B248B340060509D /* LogoutRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRequest.swift; sourceTree = "<group>"; };
 		B5F624619F8D858A5A92225C /* Pods_DataProviderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataProviderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44E3497A8DBE9D589D10CB0 /* Pods-DataProviderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataProviderTests.debug.xcconfig"; path = "Target Support Files/Pods-DataProviderTests/Pods-DataProviderTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,8 +179,8 @@
 		98271FF62B19217600097889 /* DataProvider */ = {
 			isa = PBXGroup;
 			children = (
-				98F187CC2B22022700942D98 /* Request */,
 				98F1879E2B21F07300942D98 /* Model */,
+				98F187CC2B22022700942D98 /* Request */,
 				9805BFE02B1A19CF009462B5 /* Core */,
 				987894352B1F5F4600608E8C /* Manager */,
 				98271FF72B19217600097889 /* DataProvider.h */,
@@ -205,6 +223,8 @@
 				98F67A642B2370A40060509D /* SuccessResponse.swift */,
 				98F67A6A2B23719F0060509D /* MainCategory.swift */,
 				98F67A6C2B2371C80060509D /* BaseResponse.swift */,
+				98F67ACD2B2486EA0060509D /* Auth.swift */,
+				98F67ACF2B2487290060509D /* GetRecipeCategories.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				98F67A702B2373A50060509D /* User */,
+				98F67AC62B2486640060509D /* Auth */,
 				98F187CD2B22024E00942D98 /* Recipes */,
 				98F67A582B236F4F0060509D /* RecipesDetail */,
 			);
@@ -242,6 +263,9 @@
 			isa = PBXGroup;
 			children = (
 				98F67A5C2B236FC40060509D /* GetRecipeCommentsRequest.swift */,
+				98F67AA92B247ED50060509D /* PostRecipeCommentRequest.swift */,
+				98F67AAB2B247EF60060509D /* DeleteRecipeCommentRequest.swift */,
+				98F67AAD2B247F080060509D /* EditRecipeCommentRequest.swift */,
 			);
 			path = Comments;
 			sourceTree = "<group>";
@@ -252,6 +276,17 @@
 				98F67A712B2373BD0060509D /* UserFollowRequest.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		98F67AC62B2486640060509D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				98F67AC72B2486790060509D /* LoginRequst.swift */,
+				98F67AC92B2486970060509D /* RegisterRequest.swift */,
+				98F67ACB2B2486AD0060509D /* ForgotPasswordRequest.swift */,
+				98F67ADF2B248B340060509D /* LogoutRequest.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,8 +447,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				98F187A42B21F0F900942D98 /* NumberOfPerson.swift in Sources */,
+				98F67AE02B248B340060509D /* LogoutRequest.swift in Sources */,
 				98F67A722B2373BD0060509D /* UserFollowRequest.swift in Sources */,
 				98F67A632B2370820060509D /* RecipeLikeRequest.swift in Sources */,
+				98F67AC82B2486790060509D /* LoginRequst.swift in Sources */,
 				9805BFE22B1A19EA009462B5 /* DecodableResponseRequest.swift in Sources */,
 				98F187CF2B22026000942D98 /* GetRecipeRequest.swift in Sources */,
 				98F187D12B22028500942D98 /* Recipes.swift in Sources */,
@@ -422,6 +459,7 @@
 				98F187A82B21F12C00942D98 /* Image.swift in Sources */,
 				98F67A6B2B23719F0060509D /* MainCategory.swift in Sources */,
 				9878943B2B1F608700608E8C /* APIDecodableResponseRequest.swift in Sources */,
+				98F67ACA2B2486970060509D /* RegisterRequest.swift in Sources */,
 				9805BFEC2B1A1BE6009462B5 /* DataProviderProtocol.swift in Sources */,
 				98F67A6D2B2371C80060509D /* BaseResponse.swift in Sources */,
 				98F67A652B2370A40060509D /* SuccessResponse.swift in Sources */,
@@ -430,16 +468,22 @@
 				98F67A5D2B236FC40060509D /* GetRecipeCommentsRequest.swift in Sources */,
 				98271FF92B19217600097889 /* DataProvider.docc in Sources */,
 				9805BFE82B1A1ADF009462B5 /* RequestMethod.swift in Sources */,
+				98F67AAE2B247F080060509D /* EditRecipeCommentRequest.swift in Sources */,
 				9805BFE62B1A1A84009462B5 /* RequestProtocol.swift in Sources */,
 				98F187A22B21F0CF00942D98 /* User.swift in Sources */,
 				987894372B1F5F6B00608E8C /* APIDataProvider.swift in Sources */,
+				98F67ACC2B2486AD0060509D /* ForgotPasswordRequest.swift in Sources */,
 				987894392B1F601400608E8C /* APIRequestAdapter .swift in Sources */,
 				98F67A612B2370110060509D /* Comments.swift in Sources */,
 				98F187D32B22029A00942D98 /* Pagination.swift in Sources */,
+				98F67AD02B2487290060509D /* GetRecipeCategories.swift in Sources */,
 				98F187A02B21F07E00942D98 /* Recipe.swift in Sources */,
 				98F187A62B21F11300942D98 /* Category.swift in Sources */,
+				98F67AAC2B247EF60060509D /* DeleteRecipeCommentRequest.swift in Sources */,
 				98F67A5A2B236F5F0060509D /* GetRecipeDetailRequest.swift in Sources */,
 				98F67A692B2371700060509D /* GetCategoriesWithRecipesRequest.swift in Sources */,
+				98F67AAA2B247ED50060509D /* PostRecipeCommentRequest.swift in Sources */,
+				98F67ACE2B2486EA0060509D /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
