@@ -45,7 +45,4 @@ class MainTabBarController: UITabBarController {
         favoritesRouter.viewController = favoritesViewController
         return navController
     }
-    
-
-
 }
