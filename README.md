@@ -1,5 +1,7 @@
 # FODAMY APP
 
+This project is the project of the Mobillium Internship Program.
+
 ## Concepts & Technologies Used
 - Swift
 - MVVM-R
@@ -31,4 +33,3 @@
 
 <img width="320" alt="3" src="https://github.com/sehribany/Fodamy/assets/65239293/33f8ac35-e9f6-45f1-a22f-23ea370f1655"> 
 
--------------------------------------
