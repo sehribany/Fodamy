@@ -1,4 +1,26 @@
 # FODAMY APP
-------------------------------------------
 
-PODS
+## Concepts & Technologies Used
+- Swift
+- MVVM-R
+- SOLID
+- CocoaPods
+- Modular Structure
+  
+## PODS
+- Alamofire
+- KingFisher
+- TinyConstraints
+- SwiftGen
+- SegmentIO
+- SKPhoto
+- SwiftEntryKit
+- KeyChain Swift
+- SwiftValidator
+- MobilliumUserDefaults
+
+## Screenshots
+![1](https://github.com/sehribany/Fodamy/assets/65239293/7dc9e63d-bae7-4eab-a508-7c097dee0bd7) ![Uploading 2.png…]()
+
+
+
