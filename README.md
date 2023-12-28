@@ -19,7 +19,6 @@ This project is the project of the Mobillium Internship Program.
 - SKPhoto
 - SwiftEntryKit
 - KeyChain Swift
-- SwiftValidator
 - MobilliumUserDefaults
 
 ## Screenshots
