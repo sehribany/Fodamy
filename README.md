@@ -20,6 +20,7 @@ This project is the project of the Mobillium Internship Program.
 - SwiftEntryKit
 - KeyChain Swift
 - MobilliumUserDefaults
+  
 
 ## Screenshots
 <img width="320" alt="1" src="https://github.com/sehribany/Fodamy/assets/65239293/7dc9e63d-bae7-4eab-a508-7c097dee0bd7"> 
