@@ -1,6 +1,5 @@
 # FODAMY APP
 
-
 This project is the project of the Mobillium Internship Program.
 
 ## Concepts & Technologies Used
